@@ -28,3 +28,13 @@ const calculateShivEarning = calculateTotalEarnings.bind(salesPerson1);
 const totalEarningsShivNextMonth = calculateShivEarning(3300,1800);
 console.log(`${salesPerson1.name}'s Earnings Next Month: $${totalEarningsShivNextMonth}`); // Output: John's Earnings Next Month: $5550
 
+
+
+// How do you round the number 7.233, to the nearest integer? --> Math.round(7.233);
+// How do you find the number with the highest value of x and y? --> Math.max(x,y);
+// How can you detect the client's browser name? --> navigator.appName 
+// Which doctype is correct for HTML5? --> <!DOCTYPE html>  
+// In HTML, you can embed SVG elements directly into an HTML page. --> True  
+// The HTML <canvas> element is used to: --> draw graphics  
+// Which HTML element is used to display a scalar measurement within a range? --> <meter>  
+
