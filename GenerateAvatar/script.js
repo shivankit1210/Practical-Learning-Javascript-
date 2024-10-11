@@ -4,7 +4,7 @@ const btn = document.querySelector(".btn");
 const avatar = document.querySelector(".avatar");
 const like = document.querySelector(".like");
 const fav = document.querySelector(".fav");
-// const showFavoritesButton = document.getElementById("show-favorites");
+const showFavoritesButton = document.getElementById("show-favorites");
 
 mobileMenu.addEventListener("click", () => {
   navLinks.classList.toggle("active");
@@ -14,7 +14,6 @@ const randomstring = () => {
   return Math.random().toString(36).substring(2, 7);
 };
 
-// showFavoritesButton.addEventListener("click", displayFavorites);
 
 
 async function fetchAvatar() {
@@ -53,7 +52,7 @@ btn.addEventListener("click", () => {
       if(!favorites.includes(currentAvatar)){
         favorites.push(currentAvatar);
         localStorage.setItem("favorites", JSON.stringify(favorites));
-        displayFavorites();
+        // displayFavorites();
       }
     }
   });
@@ -71,6 +70,4 @@ btn.addEventListener("click", () => {
     });
   }
 
-displayFavorites();
-
-
+showFavoritesButton.addEventListener("click", displayFavorites);
